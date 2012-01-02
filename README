@@ -1,0 +1,17 @@
+Problem
+     Developers usually has to handle pages that have an area which could show different things according to its state page. Simple implementations managed this problem adding "if" according the page state. Behind this problem there is a real object involved called viewstack component.
+
+Solution
+
+     A viewstack is a component that allows you to manage a visual area in your web pages. A viewstack is a stack of views. The developer chooses which view has to be shown in the page.
+     You can connect differents components that manage the viewstack. For instance, you can connect a menu which loops the viewstack and generate itself. There are several examples in this project and you can extend it as your wish.
+
+To add wicket-viewstack to your maven project add the following directory
+
+ 	<repositories>
+		<repository>
+  			<id>wicket-viewstack</id>
+			<name>wicket viewstack</name>
+			<url>http://misdeportes.github.com/wicket-viewstack/repository/</url>
+		</repository>
+	</repositories>
