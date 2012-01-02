@@ -19,17 +19,34 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+<<<<<<< HEAD
+=======
+	<distributionManagement>
+  		<repository>
+	    <id>gh-pages</id>
+	    <url>file:///${basedir}/../wicket-viewstack/repository/</url>
+	    </repository>
+	</distributionManagement>
+>>>>>>> gh-pages
 	<dependencies>
 		<!--  WICKET DEPENDENCIES -->
 		<dependency>
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket</artifactId> 
 			<version>${wicket.version}</version>
+<<<<<<< HEAD
 		</dependency>
 		<dependency>
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket-extensions</artifactId>
 			<version>${wicket.version}</version>
+=======
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-extensions</artifactId>
+			<version>${wicket.version}</version>
+>>>>>>> gh-pages
 		</dependency>
 		<dependency>
 			<groupId>commons-collections</groupId>
@@ -80,7 +97,11 @@
 			<artifactId>jetty-management</artifactId>
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
+<<<<<<< HEAD
 		</dependency>
+=======
+		</dependency>
+>>>>>>> gh-pages
 		
 	</dependencies>
 	<build>
@@ -112,6 +133,7 @@
 				</excludes>
 			</testResource>
 		</testResources>
+<<<<<<< HEAD
 		<plugins>
 	  		<!-- plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -119,6 +141,15 @@
 		    	<configuration>
 		    		<warName>ViewStack</warName>
 		    	</configuration>
+=======
+		<plugins>
+	  		<!-- plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+		    	<artifactId>maven-war-plugin</artifactId>
+		    	<configuration>
+		    		<warName>ViewStack</warName>
+		    	</configuration>
+>>>>>>> gh-pages
 			</plugin-->
 			<plugin>
 				<inherited>true</inherited>
@@ -141,6 +172,7 @@
 				<configuration>
 					<downloadSources>true</downloadSources>
 				</configuration>
+<<<<<<< HEAD
 			</plugin>
 			<plugin>
             	<artifactId>maven-source-plugin</artifactId>
@@ -153,6 +185,20 @@
                             </goals>
                     </execution>
                 </executions>
+=======
+			</plugin>
+			<plugin>
+            	<artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        	<goals>
+                            	<goal>jar</goal>
+                            </goals>
+                    </execution>
+                </executions>
+>>>>>>> gh-pages
             </plugin>
 		</plugins>
 	</build>
