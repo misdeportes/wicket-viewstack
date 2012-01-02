@@ -3,6 +3,7 @@
 .actionScriptProperties
 
 target/
+repository/
 
 .project
 .settings/
